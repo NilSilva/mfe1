@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
+import { TestComponent } from "./test.component";
 
 export const APP_ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'test' },
-  { path: 'test', loadChildren: () => import('./test/test.module').then(m => m.TestModule) },
+  { path: 'test', component: TestComponent },
 ]
