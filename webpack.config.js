@@ -26,7 +26,7 @@ module.exports = {
         name: "mfe",
         filename: "remoteEntry.js",
         exposes: {
-            './Module': './src/app/app-routing.module.ts',
+            './Module': './src/app/test/test.module.ts',
         },
 
         shared: share({
